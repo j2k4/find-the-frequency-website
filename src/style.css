@@ -83,113 +83,31 @@ body {
   gap: 0.5rem;
 }
 
-/* Modern CSS Icons */
-.about-icon {
+/* Font Awesome Icon Styling */
+.nav-link i {
+  font-size: 1rem;
   width: 16px;
-  height: 16px;
-  background: currentColor;
-  border-radius: 50%;
-  position: relative;
-  display: inline-block;
+  text-align: center;
 }
 
-.about-icon::before {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 2px;
-  background: var(--bg-primary);
-  border-radius: 50%;
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.about-icon::after {
-  content: '';
-  position: absolute;
-  top: 6px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 6px;
-  background: var(--bg-primary);
-  border-radius: 1px;
-}
-
-.contact-icon {
+.contact-btn i {
+  font-size: 1rem;
   width: 16px;
-  height: 12px;
-  border: 2px solid currentColor;
-  border-radius: 2px;
-  position: relative;
-  display: inline-block;
+  text-align: center;
 }
 
-.contact-icon::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 6px solid currentColor;
-}
-
-.instagram-icon {
-  width: 16px;
-  height: 16px;
+/* Instagram icon color */
+.instagram-btn i {
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  border-radius: 4px;
-  position: relative;
-  display: inline-block;
-}
-
-.instagram-icon::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 8px;
-  height: 8px;
-  border: 2px solid white;
-  border-radius: 50%;
-}
-
-.instagram-icon::after {
-  content: '';
-  position: absolute;
-  top: 3px;
-  right: 3px;
-  width: 2px;
-  height: 2px;
-  background: white;
-  border-radius: 50%;
-}
-
-.email-icon {
-  width: 16px;
-  height: 12px;
-  border: 2px solid currentColor;
-  border-radius: 2px;
-  position: relative;
-  display: inline-block;
-  margin-right: 0.5rem;
-}
-
-.email-icon::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 6px solid currentColor;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Main Content */
