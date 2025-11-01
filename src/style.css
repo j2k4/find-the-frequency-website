@@ -284,6 +284,104 @@ body {
   transform: translateY(-2px);
 }
 
+/* Contact Modal */
+.contact-modal {
+  display: block;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.contact-modal-content {
+  background-color: var(--bg-secondary);
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.contact-modal-close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.contact-modal-close:hover {
+  color: var(--text-primary);
+}
+
+.contact-modal h3 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.contact-modal p {
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.contact-options {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.contact-btn {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.email-btn {
+  background-color: var(--accent);
+  color: white;
+}
+
+.email-btn:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.instagram-btn {
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  color: white;
+}
+
+.instagram-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(225, 48, 108, 0.4);
+}
+
+.contact-info {
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+}
+
 /* Footer */
 .footer {
   background-color: var(--bg-secondary);

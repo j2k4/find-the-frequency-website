@@ -94,11 +94,54 @@ window.openArtworkModal = async function(artworkId) {
 
 // Contact about artwork
 window.contactAboutArtwork = function(artworkTitle) {
-  const subject = `Inquiry about "${artworkTitle}"`;
-  const body = `Hi! I'm interested in learning more about "${artworkTitle}". Could you please provide more details?`;
+  const modal = document.createElement('div');
+  modal.className = 'contact-modal';
+  modal.innerHTML = `
+    <div class="contact-modal-content">
+      <span class="contact-modal-close">&times;</span>
+      <h3>Contact About "${artworkTitle}"</h3>
+      <p>Get in touch to inquire about this piece:</p>
+      <div class="contact-options">
+        <button class="contact-btn email-btn" onclick="openEmailContact('${artworkTitle}')">
+          📧 Send Email
+        </button>
+        <button class="contact-btn instagram-btn" onclick="openInstagram()">
+          📱 Instagram DM
+        </button>
+      </div>
+      <div class="contact-info">
+        <p><strong>Instagram:</strong> @glastronautilus</p>
+        <p><strong>Email:</strong> findthefrequency@example.com</p>
+      </div>
+    </div>
+  `;
   
-  // Open email client
+  document.body.appendChild(modal);
+  modal.style.display = 'block';
+  
+  // Close modal functionality
+  modal.querySelector('.contact-modal-close').onclick = () => {
+    document.body.removeChild(modal);
+  };
+  
+  modal.onclick = (e) => {
+    if (e.target === modal) {
+      document.body.removeChild(modal);
+    }
+  };
+}
+
+window.openEmailContact = function(artworkTitle) {
+  const subject = `Inquiry about "${artworkTitle}"`;
+  const body = `Hi! I'm interested in learning more about "${artworkTitle}". Could you please provide more details about pricing, availability, and shipping?
+
+Thanks!`;
+  
   window.location.href = `mailto:findthefrequency@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+window.openInstagram = function() {
+  window.open('https://www.instagram.com/glastronautilus/', '_blank');
 }
 
 // Close modal functionality
