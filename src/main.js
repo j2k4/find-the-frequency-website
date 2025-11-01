@@ -107,8 +107,8 @@ window.contactAboutArtwork = function(artworkTitle) {
           Send Email
         </button>
         <button class="contact-btn instagram-btn" onclick="openInstagram()">
-          <i class="fab fa-instagram"></i>
-          Instagram DM
+          <i class="fas fa-camera"></i>
+          Instagram
         </button>
       </div>
       <div class="contact-info">
@@ -167,13 +167,13 @@ window.openContactModal = function() {
       <h3>Get In Touch</h3>
       <p>Ready to add some frequency to your space? Let's connect!</p>
       <div class="contact-options">
-        <button class="contact-btn email-btn" onclick="openGeneralEmail()">
+        <button class="contact-btn email-btn" onclick="openEmail()">
           <i class="fas fa-envelope"></i>
           Send Email
         </button>
         <button class="contact-btn instagram-btn" onclick="openInstagram()">
-          <i class="fab fa-instagram"></i>
-          Instagram DM
+          <i class="fas fa-camera"></i>
+          Instagram
         </button>
       </div>
       <div class="contact-info">

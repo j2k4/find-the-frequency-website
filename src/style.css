@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Exo 2', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   line-height: 1.6;
   font-weight: 400;
   
@@ -55,32 +55,70 @@ body {
   align-items: center;
 }
 
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-brand .logo {
+  height: 40px;
+  width: auto;
+  transition: all 0.3s ease;
+  /* Apply gradient overlay to the SVG */
+  filter: 
+    drop-shadow(0 0 8px rgba(255, 107, 107, 0.4))
+    hue-rotate(0deg) 
+    saturate(1.2) 
+    brightness(1.1);
+}
+
+.nav-brand .logo:hover {
+  transform: scale(1.05);
+  filter: 
+    drop-shadow(0 0 12px rgba(255, 107, 107, 0.6)) 
+    drop-shadow(0 0 8px rgba(78, 205, 196, 0.4))
+    hue-rotate(10deg) 
+    saturate(1.4) 
+    brightness(1.2);
+}
+
 .nav-brand h1 {
+  font-family: 'Orbitron', monospace;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, var(--text-primary), var(--accent));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 0.5rem;
 }
 
 .nav-link {
   color: var(--text-secondary);
   text-decoration: none;
+  font-family: 'Exo 2', sans-serif;
   font-weight: 500;
-  transition: color 0.3s ease;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
 }
 
 .nav-link:hover {
   color: var(--text-primary);
-}
-
-.nav-link {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  background-color: rgba(255, 107, 107, 0.1);
 }
 
 /* Font Awesome Icon Styling */
@@ -103,11 +141,9 @@ body {
 }
 
 /* Instagram icon color */
-.instagram-btn i {
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+/* Ensure Instagram button also has black text */
+.instagram-btn {
+  color: #000000 !important;
 }
 
 /* Main Content */
@@ -124,9 +160,12 @@ body {
 }
 
 .hero h2 {
+  font-family: 'Orbitron', monospace;
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   background: linear-gradient(135deg, var(--text-primary), var(--accent));
   background-clip: text;
   -webkit-background-clip: text;
@@ -385,18 +424,28 @@ body {
   transition: all 0.3s ease;
 }
 
-.email-btn {
-  background-color: var(--accent);
-  color: white;
+/* Shared styling for both email and instagram buttons */
+.email-btn,
+.instagram-btn {
+  background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+  color: #000000;
+  border: none;
+  /* Subtle gradient text similar to site name */
+  background-image: linear-gradient(135deg, var(--text-primary), var(--accent));
+  /* Text now visible with solid white color */
 }
 
-.email-btn:hover {
-  background-color: var(--accent-hover);
+.email-btn:hover,
+.instagram-btn:hover {
+  background: linear-gradient(135deg, #4ecdc4, #45b7d1);
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+  /* Enhance gradient on hover */
+  background-image: linear-gradient(135deg, var(--accent), #4ecdc4);
 }
 
 .instagram-btn {
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  color: var(--text-primary);
   color: white;
 }
 
