@@ -144,6 +144,81 @@ window.openInstagram = function() {
   window.open('https://www.instagram.com/glastronautilus/', '_blank');
 }
 
+// About Modal
+window.openAboutModal = function() {
+  const modal = document.getElementById('about-modal');
+  modal.style.display = 'block';
+}
+
+window.closeAboutModal = function() {
+  const modal = document.getElementById('about-modal');
+  modal.style.display = 'none';
+}
+
+// Contact Modal  
+window.openContactModal = function() {
+  const modal = document.createElement('div');
+  modal.className = 'contact-modal';
+  modal.innerHTML = `
+    <div class="contact-modal-content">
+      <span class="contact-modal-close">&times;</span>
+      <h3>Get In Touch</h3>
+      <p>Ready to add some frequency to your space? Let's connect!</p>
+      <div class="contact-options">
+        <button class="contact-btn email-btn" onclick="openGeneralEmail()">
+          <span class="email-icon"></span>
+          Send Email
+        </button>
+        <button class="contact-btn instagram-btn" onclick="openInstagram()">
+          <span class="instagram-icon"></span>
+          Instagram DM
+        </button>
+      </div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-label">Instagram:</span>
+          <span>@glastronautilus</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Email:</span>
+          <span>findthefrequency@example.com</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Location:</span>
+          <span>Dallas, TX</span>
+        </div>
+      </div>
+    </div>
+  `;
+  
+  document.body.appendChild(modal);
+  modal.style.display = 'block';
+  
+  // Close modal functionality
+  modal.querySelector('.contact-modal-close').onclick = () => {
+    document.body.removeChild(modal);
+  };
+  
+  modal.onclick = (e) => {
+    if (e.target === modal) {
+      document.body.removeChild(modal);
+    }
+  };
+}
+
+window.openGeneralEmail = function() {
+  const subject = 'Inquiry from Find the Frequency Website';
+  const body = `Hi Kyle!
+
+I found your art through the Find the Frequency website and would love to connect. 
+
+[Please tell me what you're interested in - commissioning work, purchasing existing pieces, or just saying hello!]
+
+Looking forward to hearing from you!`;
+  
+  window.location.href = `mailto:findthefrequency@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
 // Close modal functionality
 document.addEventListener('DOMContentLoaded', function() {
   const modal = document.getElementById('artwork-modal');
@@ -158,6 +233,12 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('click', function(event) {
     if (event.target === modal) {
       modal.style.display = 'none';
+    }
+    
+    // Handle about modal
+    const aboutModal = document.getElementById('about-modal');
+    if (event.target === aboutModal) {
+      aboutModal.style.display = 'none';
     }
   });
   
