@@ -1,0 +1,162 @@
+[
+  {
+    "id": "artwork-0379",
+    "title": "Neon Dreams",
+    "medium": "Acrylic on Canvas",
+    "dimensions": "24\" x 18\"",
+    "price": "$450",
+    "description": "A vibrant exploration of urban nightlife through electric blues and magentas. This piece captures the energy of city streets after dark, with flowing brushstrokes that seem to pulse with their own rhythm.",
+    "image": "/images/IMG_0379.jpeg",
+    "available": true
+  },
+  {
+    "id": "artwork-0380",
+    "title": "Cosmic Interference", 
+    "medium": "Oil and Digital Media on Canvas",
+    "dimensions": "30\" x 24\"",
+    "price": "$675",
+    "description": "An abstract journey through space and time, where traditional oil painting meets contemporary digital techniques. The layered composition suggests both destruction and creation happening simultaneously.",
+    "image": "/images/IMG_0380.jpeg",
+    "available": true
+  },
+  {
+    "id": "artwork-0381",
+    "title": "Frequency Shift",
+    "medium": "Mixed Media Collage", 
+    "dimensions": "16\" x 20\"",
+    "price": "$525",
+    "description": "A complex layering of found materials, paint, and texture that explores the concept of tuning into different wavelengths of reality. Each viewing reveals new details hidden within the composition.",
+    "image": "/images/IMG_0381.jpeg",
+    "available": true
+  },
+  {
+    "id": "artwork-0385",
+    "title": "Electric Storm",
+    "medium": "Acrylic and Charcoal",
+    "dimensions": "22\" x 28\"", 
+    "price": "$595",
+    "description": "Raw energy captured in bold strokes and dramatic contrasts. This piece emerged from a late-night studio session during an actual thunderstorm, channeling that natural electrical power into visual form.",
+    "image": "/images/IMG_0385.jpeg",
+    "available": true
+  },
+  {
+    "id": "artwork-0386",
+    "title": "Urban Decay Symphony",
+    "medium": "Spray Paint and Acrylic on Wood Panel",
+    "dimensions": "36\" x 24\"",
+    "price": "$750",
+    "description": "A commentary on city life and renewal, using street art techniques on a traditional canvas. The weathered textures and bold colors speak to resilience in urban environments.",
+    "image": "/images/IMG_0386.jpeg",
+    "available": true
+  },
+  {
+    "id": "artwork-0387",
+    "title": "Wavelength",
+    "medium": "Oil on Canvas",
+    "dimensions": "20\" x 16\"",
+    "price": "$425",
+    "description": "Soft, undulating forms that seem to vibrate with unseen energy. This piece explores the visual representation of sound and the way music can be translated into color and movement.",
+    "image": "/images/IMG_0387.jpeg",
+    "available": true
+  },
+  {
+    "id": "artwork-0388",
+    "title": "Digital Rebellion",
+    "medium": "Mixed Media with LED Elements",
+    "dimensions": "24\" x 30\"",
+    "price": "$850", 
+    "description": "A bold fusion of traditional painting with embedded technology. The interactive LED components respond to ambient light, creating a living artwork that changes throughout the day.",
+    "image": "/images/IMG_0388.jpeg",
+    "available": true
+  },
+  {
+    "id": "artwork-0389",
+    "title": "Metamorphosis",
+    "medium": "Watercolor and Ink",
+    "dimensions": "18\" x 24\"",
+    "price": "$475",
+    "description": "Fluid transformations captured in transparent washes and precise line work. This piece explores themes of change and adaptation, with forms that seem to shift before your eyes.",
+    "image": "/images/IMG_0389.jpeg",
+    "available": true
+  },
+  {
+    "id": "artwork-0390",
+    "title": "Static Noise",
+    "medium": "Textured Acrylic on Canvas",
+    "dimensions": "28\" x 22\"",
+    "price": "$625",
+    "description": "A heavily textured exploration of communication breakdown and interference. Built up with multiple layers of paint and found materials to create a tactile, almost sculptural surface.",
+    "image": "/images/IMG_0390.jpeg",
+    "available": true
+  },
+  {
+    "id": "artwork-0391", 
+    "title": "Chromatic Burst",
+    "medium": "Oil and Metallic Pigments",
+    "dimensions": "32\" x 24\"",
+    "price": "$725",
+    "description": "An explosive celebration of color and light, enhanced with metallic pigments that catch and reflect light differently throughout the day. The composition radiates outward from a central point of intense energy.",
+    "image": "/images/IMG_0391.jpeg",
+    "available": true
+  },
+  {
+    "id": "artwork-1191",
+    "title": "Tidal Pattern",
+    "medium": "Acrylic Pour Technique",
+    "dimensions": "20\" x 20\"",
+    "price": "$395",
+    "description": "Created using fluid painting techniques that allow the colors to flow and interact naturally. The resulting patterns echo both oceanic movements and cellular structures, bridging the macro and micro worlds.",
+    "image": "/images/IMG_1191.jpeg",
+    "available": true
+  },
+  {
+    "id": "artwork-1192",
+    "title": "Fragmented Reality",
+    "medium": "Collage and Acrylic", 
+    "dimensions": "26\" x 18\"",
+    "price": "$550",
+    "description": "A deconstruction of familiar forms into abstract components, questioning our perception of reality. Magazine fragments and painted elements combine to create new narratives and unexpected connections.",
+    "image": "/images/IMG_1192.jpeg",
+    "available": true
+  },
+  {
+    "id": "artwork-1201",
+    "title": "Analog Glitch",
+    "medium": "Mixed Media on Paper",
+    "dimensions": "14\" x 18\"",
+    "price": "$325",
+    "description": "An exploration of technology's imperfections translated into physical media. Hand-drawn elements mimic digital artifacts, creating a bridge between analog and digital artistic languages.",
+    "image": "/images/IMG_1201.jpeg",
+    "available": true
+  },
+  {
+    "id": "artwork-1202",
+    "title": "Spectrum Analysis", 
+    "medium": "Acrylic and Graphite",
+    "dimensions": "24\" x 36\"",
+    "price": "$685",
+    "description": "A large-scale investigation into color theory and visual perception. Precise geometric elements interact with organic flows of paint, creating tension between order and chaos.",
+    "image": "/images/IMG_1202.jpeg",
+    "available": true
+  },
+  {
+    "id": "artwork-1204",
+    "title": "Signal Processing",
+    "medium": "Digital Print on Canvas",
+    "dimensions": "16\" x 24\"",
+    "price": "$375",
+    "description": "Originally created digitally and translated to canvas, this piece explores the transformation of information as it passes through different media. Each layer represents a different stage of signal degradation and enhancement.",
+    "image": "/images/IMG_1204.jpeg",
+    "available": true
+  },
+  {
+    "id": "artwork-1420",
+    "title": "The Frequency Manifesto",
+    "medium": "Mixed Media Installation Piece",
+    "dimensions": "48\" x 36\"", 
+    "price": "$1,200",
+    "description": "The centerpiece of the Find the Frequency collection. This large-scale work incorporates sound, texture, and visual elements to create an immersive experience that embodies the artist's philosophy of tuning into life's hidden rhythms.",
+    "image": "/images/IMG_1420.jpeg",
+    "available": false
+  }
+]
