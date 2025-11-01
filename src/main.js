@@ -98,7 +98,7 @@ window.contactAboutArtwork = function(artworkTitle) {
   const body = `Hi! I'm interested in learning more about "${artworkTitle}". Could you please provide more details?`;
   
   // Open email client
-  window.location.href = `mailto:artist@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = `mailto:findthefrequency@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 
 // Close modal functionality
